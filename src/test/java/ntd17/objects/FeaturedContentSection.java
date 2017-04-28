@@ -1,0 +1,57 @@
+package ntd17.objects;
+
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
+public class FeaturedContentSection {
+    private Article article1;
+    private Article article2;
+    private Article article3;
+
+    public FeaturedContentSection(Article article1, Article article2, Article article3) {
+        this.article1 = article1;
+        this.article2 = article2;
+        this.article3 = article3;
+    }
+
+    public FeaturedContentSection(WebElement _1_imageElement, List<WebElement> _1_tagElementList,
+                                  WebElement _1_postElement,
+                                  WebElement _2_imageElement, List<WebElement> _2_tagElementList,
+                                  WebElement _2_postElement,
+                                  WebElement _3_imageElement, List<WebElement> _3_tagElementList,
+                                  WebElement _3_postElement) {
+        this.article1 = new Article(_1_imageElement, _1_tagElementList, _1_postElement);
+        this.article2 = new Article(_2_imageElement, _2_tagElementList, _2_postElement);
+        this.article3 = new Article(_3_imageElement, _3_tagElementList, _3_postElement);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        FeaturedContentSection that = (FeaturedContentSection) o;
+
+        if (article1 != null ? !article1.equals(that.article1) : that.article1 != null) return false;
+        if (article2 != null ? !article2.equals(that.article2) : that.article2 != null) return false;
+        return article3 != null ? article3.equals(that.article3) : that.article3 == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = article1 != null ? article1.hashCode() : 0;
+        result = 31 * result + (article2 != null ? article2.hashCode() : 0);
+        result = 31 * result + (article3 != null ? article3.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "FeaturedContentSection{" +
+                "article1=" + article1 +
+                ", article2=" + article2 +
+                ", article3=" + article3 +
+                '}';
+    }
+}
