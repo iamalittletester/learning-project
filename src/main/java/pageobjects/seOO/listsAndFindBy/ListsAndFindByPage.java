@@ -2,7 +2,6 @@ package pageobjects.seOO.listsAndFindBy;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 import java.util.ArrayList;
 import java.util.List;
