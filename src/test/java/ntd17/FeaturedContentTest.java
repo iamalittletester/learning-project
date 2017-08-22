@@ -14,35 +14,41 @@ import static org.testng.Assert.assertEquals;
 public class FeaturedContentTest {
     //images
     private ClickableImage image1 = new ClickableImage(
-            "https://iamalittletester.wordpress.com/2016/02/02/how-to-identify-the-test-scenarios-you-have-to-automate/",
+            "https://iamalittletester.wordpress" +
+                    ".com/2016/02/02/how-to-identify-the-test-scenarios-you-have-to-automate/",
             "346", "192",
             "https://iamalittletester.files.wordpress.com/2016/01/24680224896_5c3e7335c5_o.jpg?w=672&h=372&crop=1");
     private ClickableImage image2 = new ClickableImage(
             "https://iamalittletester.wordpress.com/2015/04/03/working-with-cookies-in-selenium/", "346", "192",
             "https://iamalittletester.files.wordpress.com/2015/04/dsc_0882.jpg?w=672&h=372&crop=1");
     private ClickableImage image3 = new ClickableImage(
-            "https://iamalittletester.wordpress.com/2014/05/05/useful-generating-random-strings-with-randomstringutils/",
-            "346", "192", "https://iamalittletester.files.wordpress.com/2014/05/13643775275_e4d2dd2da3_o.jpg?w=672&h=372&crop=1");
+            "https://iamalittletester.wordpress" +
+                    ".com/2014/05/05/useful-generating-random-strings-with-randomstringutils/",
+            "346", "192", "https://iamalittletester.files.wordpress.com/2014/05/13643775275_e4d2dd2da3_o" +
+            ".jpg?w=672&h=372&crop=1");
 
     //the tags
-    private Link tag_automation = new Link("https://iamalittletester.wordpress.com/category/automation/", "AUTOMATION");
-    private Link tag_code = new Link("https://iamalittletester.wordpress.com/category/code/", "CODE");
-    private Link tag_testing = new Link("https://iamalittletester.wordpress.com/category/testing/", "TESTING");
-    private Link tag_selenium = new Link("https://iamalittletester.wordpress.com/category/selenium/", "SELENIUM");
-    private Link tag_flavours = new Link("https://iamalittletester.wordpress.com/category/flavours/", "FLAVOURS");
+    private Link tagAutomation = new Link("https://iamalittletester.wordpress.com/category/automation/", "AUTOMATION");
+    private Link tagCode = new Link("https://iamalittletester.wordpress.com/category/code/", "CODE");
+    private Link tagTesting = new Link("https://iamalittletester.wordpress.com/category/testing/", "TESTING");
+    private Link tagSelenium = new Link("https://iamalittletester.wordpress.com/category/selenium/", "SELENIUM");
+    private Link tagFlavours = new Link("https://iamalittletester.wordpress.com/category/flavours/", "FLAVOURS");
 
     //below part of the article - the link to the post
-    private Link postLink1 = new Link("https://iamalittletester.wordpress.com/2016/02/02/how-to-identify-the-test-scenarios-you-have-to-automate/",
+    private Link postLink1 = new Link("https://iamalittletester.wordpress" +
+            ".com/2016/02/02/how-to-identify-the-test-scenarios-you-have-to-automate/",
             "HOW TO IDENTIFY THE TEST SCENARIOS YOU HAVE TO AUTOMATE");
-    private Link postLink2 = new Link("https://iamalittletester.wordpress.com/2015/04/03/working-with-cookies-in-selenium/",
+    private Link postLink2 = new Link("https://iamalittletester.wordpress" +
+            ".com/2015/04/03/working-with-cookies-in-selenium/",
             "WORKING WITH COOKIES IN SELENIUM");
-    private Link postLink3 = new Link("https://iamalittletester.wordpress.com/2014/05/05/useful-generating-random-strings-with-randomstringutils/",
+    private Link postLink3 = new Link("https://iamalittletester.wordpress" +
+            ".com/2014/05/05/useful-generating-random-strings-with-randomstringutils/",
             "USEFUL: GENERATING RANDOM STRINGS WITH RANDOMSTRINGUTILS");
 
     //tag sections
-    private TagSection tagSection1 = new TagSection(tag_automation, tag_code, tag_testing);
-    private TagSection tagSection2 = new TagSection(tag_automation, tag_selenium, tag_testing);
-    private TagSection tagSection3 = new TagSection(tag_automation, tag_flavours, tag_testing);
+    private TagSection tagSection1 = new TagSection(tagAutomation, tagCode, tagTesting);
+    private TagSection tagSection2 = new TagSection(tagAutomation, tagSelenium, tagTesting);
+    private TagSection tagSection3 = new TagSection(tagAutomation, tagFlavours, tagTesting);
 
     //articles
     private Article article1 = new Article(image1, tagSection1, postLink1);

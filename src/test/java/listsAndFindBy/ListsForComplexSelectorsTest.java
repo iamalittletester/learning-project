@@ -46,10 +46,11 @@ public class ListsForComplexSelectorsTest {
         //you are looking for the element whose getText() results in "My favourite element"
         //once the element is found, print on which position in the list it is found
         //and print what random class was attached to its' HTML representation
-        for (int i=0; i< page.listElements.size(); i++) {
+        for (int i = 0; i < page.listElements.size(); i++) {
             if (page.listElements.get(i).getText().equals("My favourite element")) {
                 System.out.println("Found the required element, it is in the list at index: " + i);
-                System.out.println("The class attribute of the element is : " + page.listElements.get(i).getAttribute("class"));
+                System.out.println("The class attribute of the element is : " + page.listElements.get(i).getAttribute
+                        ("class"));
             }
         }
 
@@ -65,7 +66,8 @@ public class ListsForComplexSelectorsTest {
         List<String> listOfItems = new ArrayList<>();
         System.out.println("The HTML code that opened in the browser is:");
         for (int i = 0; i < 10; i++) {
-            listOfItems.add("<li class=\"" + randomAlphabetic(6) + "\"> This is some random text " + randomAlphabetic(20) + "</li>");
+            listOfItems.add("<li class=\"" + randomAlphabetic(6) + "\"> This is some random text " + randomAlphabetic
+                    (6) + "</li>");
         }
         listOfItems.add("<li class=\"" + randomAlphabetic(6) + "\"> My favourite element </li>");
         shuffle(listOfItems);

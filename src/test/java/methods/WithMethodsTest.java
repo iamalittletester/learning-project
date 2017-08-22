@@ -1,4 +1,4 @@
-package betterTestCode._1methods;
+package methods;
 
 import org.testng.annotations.Test;
 

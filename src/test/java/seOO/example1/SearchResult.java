@@ -1,6 +1,5 @@
 package seOO.example1;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static org.openqa.selenium.By.cssSelector;
@@ -39,13 +38,17 @@ public class SearchResult {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         SearchResult that = (SearchResult) o;
 
-        if (!site.equals(that.site)) return false;
-        if (!url.equals(that.url)) return false;
+        if (!site.equals(that.site))
+            return false;
+        if (!url.equals(that.url))
+            return false;
         return summary.equals(that.summary);
     }
 

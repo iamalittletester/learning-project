@@ -15,15 +15,15 @@ public class FeaturedContentSection {
         this.article3 = article3;
     }
 
-    public FeaturedContentSection(WebElement _1_imageElement, List<WebElement> _1_tagElementList,
-                                  WebElement _1_postElement,
-                                  WebElement _2_imageElement, List<WebElement> _2_tagElementList,
-                                  WebElement _2_postElement,
-                                  WebElement _3_imageElement, List<WebElement> _3_tagElementList,
-                                  WebElement _3_postElement) {
-        this.article1 = new Article(_1_imageElement, _1_tagElementList, _1_postElement);
-        this.article2 = new Article(_2_imageElement, _2_tagElementList, _2_postElement);
-        this.article3 = new Article(_3_imageElement, _3_tagElementList, _3_postElement);
+    public FeaturedContentSection(WebElement imageElement1, List<WebElement> tagElementList1,
+                                  WebElement postElement1,
+                                  WebElement imageElement2, List<WebElement> tagElementList2,
+                                  WebElement postElement2,
+                                  WebElement imageElement3, List<WebElement> tagElementList3,
+                                  WebElement postElement3) {
+        this.article1 = new Article(imageElement1, tagElementList1, postElement1);
+        this.article2 = new Article(imageElement2, tagElementList2, postElement2);
+        this.article3 = new Article(imageElement3, tagElementList3, postElement3);
     }
 
     @Override

@@ -15,14 +15,15 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElemen
 import static org.testng.Assert.assertEquals;
 
 public class SearchResultTest {
+    //the expected result
+    private final SearchResult expectedSearchResult = new SearchResult("expectedSite", "expectedUrl",
+            "expectedSummary");
     //webDriver instance
     private WebDriver webDriver;
     //class used for initializing browser
     private BrowserGetter browserGetter = new BrowserGetter();
     //declare the page object class
     private GoogleSearchPage page = new GoogleSearchPage();
-    //the expected result
-    private final SearchResult expectedSearchResult = new SearchResult("expectedSite", "expectedUrl", "expectedSummary");
 
     @BeforeClass
     public void beforeClass() {
@@ -39,7 +40,7 @@ public class SearchResultTest {
 
     @Test
     public void checkTheFirstSearchResult() throws InterruptedException {
-         //open google search page
+        //open google search page
         webDriver.get("https://www.google.com");
         //search for a keyword
         page.searchField.sendKeys("testListener");

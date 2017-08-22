@@ -109,14 +109,14 @@ under the License.
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
         <module name="MethodName"/>
-        <module name="PackageName"/>
+        <!--<module name="PackageName"/>-->
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
         <!-- Checks for imports                              -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
-        <module name="AvoidStarImport"/>
+        <!--<module name="AvoidStarImport"/>-->
         <module name="IllegalImport"/>
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
@@ -125,7 +125,7 @@ under the License.
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
         <module name="MethodLength"/>
-        <module name="ParameterNumber"/>
+        <!--<module name="ParameterNumber"/>-->
 
 
         <!-- Checks for whitespace                               -->
@@ -157,7 +157,7 @@ under the License.
         <module name="EmptyBlock">
             <property name="option" value="text"/>
         </module>
-        <module name="NeedBraces"/>
+        <!--<module name="NeedBraces"/>-->
 
 
         <!-- Checks for common coding problems               -->
