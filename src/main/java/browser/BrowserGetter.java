@@ -4,27 +4,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import static java.lang.System.setProperty;
+import static org.apache.commons.lang3.SystemUtils.*;
 
 public class BrowserGetter {
 
     public WebDriver getChromeDriver() {
-        String osName = System.getProperty("os.name").toLowerCase();
         /**
          *          detect operating system
          *          if it is not one of the predefined ones, just throw exception
          *          only create a webDriver instance for a known operating system
          */
 
-        if (!osName.contains("windows") && !osName.contains("linux") && !osName.contains("mac")) {
+        if (!IS_OS_WINDOWS && !IS_OS_LINUX && !IS_OS_MAC) {
             throw new RuntimeException("Could not initialize browser due to unknown operating system!");
         }
-        if (osName.contains("windows")) {
+        if (IS_OS_WINDOWS) {
             setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver.exe");
         }
-        if (osName.contains("linux")) {
+        if (IS_OS_LINUX) {
             setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver");
         }
-        if (osName.contains("mac")) {
+        if (IS_OS_MAC) {
             setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriverMac");
         }
 
