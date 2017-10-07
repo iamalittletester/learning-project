@@ -1,22 +1,18 @@
 package brokenImage;
 
 import browser.BrowserGetter;
-import com.google.common.collect.ImmutableList;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pageobjects.seOO.listsAndFindBy.ListsAndFindByPage;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 import static org.apache.http.impl.client.HttpClients.createDefault;
 import static org.testng.Assert.assertEquals;
