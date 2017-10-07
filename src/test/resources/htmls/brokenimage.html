@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+h2   {color: white; font-size: 36 px;}
+
+#workingImageModule {
+    float: left;
+    background-color: powderblue;
+    margin: 50px;
+    border: 1px solid black;
+    padding: 30px;
+    width: 500px;
+    font-size: 24px;
+}
+
+#brokenImageModule {
+    background-color: indianred;
+    margin: 50px;
+    border: 1px solid black;
+    padding: 30px;
+    width: 500px;
+    font-size: 24px;
+    float: left;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="workingImageModule" >
+    <h2>This image render properly</h2>
+    <img id="workingImage" src="https://c1.staticflickr.com/8/7494/27510788280_a9f43c3845_s.jpg"
+         width="125"
+         height="125">
+</div>
+<div id="brokenImageModule" >
+    <h2>This image does not render properly</h2>
+    <img id="brokenImage" src="https://www.google.com/8/7494/27510788280_a9f43c3845_s.jpg2"
+         width="125"
+         height="125">
+</div>
+</body>
+</html>
