@@ -73,33 +73,33 @@ under the License.
         <module name="FileContentsHolder"/>
 
         <!--<module name="LeftCurly">-->
-            <!--<property name="option" value="nl"/>-->
+        <!--<property name="option" value="nl"/>-->
         <!--</module>-->
 
         <!--<module name="RightCurly">-->
-            <!--<property name="option" value="alone"/>-->
+        <!--<property name="option" value="alone"/>-->
         <!--</module>-->
 
         <module name="LineLength">
-            <property name="max" value="120" />
+            <property name="max" value="120"/>
             <property name="ignorePattern" value="@version|@see|@todo|TODO"/>
         </module>
 
-        <module name="MemberName" />
+        <module name="MemberName"/>
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <!--<module name="JavadocMethod">-->
-            <!--<property name="severity" value="warning"/>-->
-            <!--<property name="scope" value="protected"/>-->
+        <!--<property name="severity" value="warning"/>-->
+        <!--<property name="scope" value="protected"/>-->
         <!--</module>-->
         <!--<module name="JavadocType">-->
-            <!--<property name="scope" value="protected"/>-->
-            <!--<property name="allowUnknownTags" value="true" />-->
+        <!--<property name="scope" value="protected"/>-->
+        <!--<property name="allowUnknownTags" value="true" />-->
         <!--</module>-->
         <!--<module name="JavadocVariable">-->
-            <!--<property name="severity" value="info"/>-->
-            <!--<property name="scope" value="protected"/>-->
+        <!--<property name="severity" value="info"/>-->
+        <!--<property name="scope" value="protected"/>-->
         <!--</module>-->
 
 
@@ -131,13 +131,13 @@ under the License.
         <!-- Checks for whitespace                               -->
         <!-- See http://checkstyle.sf.net/config_whitespace.html -->
         <!--<module name="EmptyForIteratorPad">-->
-            <!--<property name="option" value="space"/>-->
+        <!--<property name="option" value="space"/>-->
         <!--</module>-->
         <!--&lt;!&ndash; module name="NoWhitespaceAfter"/ &ndash;&gt;-->
         <!--&lt;!&ndash; module name="NoWhitespaceBefore"/ &ndash;&gt;-->
         <!--<module name="OperatorWrap"/>-->
         <!--<module name="ParenPad">-->
-            <!--<property name="option" value="space" />-->
+        <!--<property name="option" value="space" />-->
         <!--</module>-->
         <!--<module name="WhitespaceAfter"/>-->
         <!--&lt;!&ndash;<module name="WhitespaceAround"/>&ndash;&gt;-->
@@ -174,7 +174,8 @@ under the License.
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
             <!-- some numbers are really not that magic -->
-            <property name="ignoreNumbers" value="-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 31, 32, 37, 64, 100, 128, 256, 512, 1000, 1024"/>
+            <property name="ignoreNumbers"
+                      value="-4999, -4998, -4997, -4996, -4995, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 31, 32, 37, 64, 100, 128, 256, 512, 1000, 1024"/>
         </module>
         <module name="MissingSwitchDefault"/>
         <module name="SimplifyBooleanExpression"/>
@@ -187,8 +188,8 @@ under the License.
         <!-- module name="HideUtilityClassConstructor"/ -->
         <module name="InterfaceIsType"/>
         <!--<module name="VisibilityModifier">-->
-            <!--<property name="protectedAllowed" value="true"/>-->
-            <!--<property name="packageAllowed" value="true"/>-->
+        <!--<property name="protectedAllowed" value="true"/>-->
+        <!--<property name="packageAllowed" value="true"/>-->
         <!--</module>-->
 
         <!-- Miscellaneous other checks.                   -->
