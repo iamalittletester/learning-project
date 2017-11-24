@@ -172,11 +172,11 @@ under the License.
         </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber">
-            <!-- some numbers are really not that magic -->
-            <property name="ignoreNumbers"
-                      value="-4999, -4998, -4997, -4996, -4995, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 31, 32, 37, 64, 100, 128, 256, 512, 1000, 1024"/>
-        </module>
+        <!--<module name="MagicNumber">-->
+            <!--&lt;!&ndash; some numbers are really not that magic &ndash;&gt;-->
+            <!--<property name="ignoreNumbers"-->
+                      <!--value="-4999, -4998, -4997, -4996, -4995, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 31, 32, 37, 64, 100, 128, 256, 512, 1000, 1024"/>-->
+        <!--</module>-->
         <module name="MissingSwitchDefault"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
