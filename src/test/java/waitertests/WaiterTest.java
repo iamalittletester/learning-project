@@ -16,7 +16,6 @@ public class WaiterTest {
     public void beforeClass() {
         //initialize the Chrome browser here
         webDriver = browserGetter.getChromeDriver();
-        //initialize page object class
     }
 
     @AfterClass
