@@ -15,5 +15,5 @@ public class WaiterPage {
     public WebElement searchButton;
     @FindBy(how = CSS, using = "#primary-menu li:nth-child(2) a")
     public WebElement menuLink;
-
+    @FindBy(how = CSS, using = ".search-field") public WebElement searchField;
 }
