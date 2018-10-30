@@ -1,6 +1,7 @@
 package stpcon17;
 
 import browser.BrowserGetter;
+import org.approvaltests.Approvals;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -54,23 +55,35 @@ public class ModulesTest {
     }
 
     @Test
-    public void images() throws InterruptedException {
-        assertEquals(new Image(page.readingModuleImageElement), readingModuleImage);
-        assertEquals(new Image(page.travelModuleImageElement), travelModuleImage);
-        assertEquals(new Image(page.photoModuleImageElement), photoModuleImage);
+    public void images() {
+        Approvals.verifyAll("",
+                new Image[]{
+                        new Image(page.readingModuleImageElement),
+                        new Image(page.travelModuleImageElement),
+                        new Image(page.photoModuleImageElement),
+                }
+        );
     }
 
     @Test
     public void links() {
-        assertEquals(new Link(page.readingModuleLinkElement), readingModuleLink);
-        assertEquals(new Link(page.travelModuleLinkElement), travelModuleLink);
-        assertEquals(new Link(page.photoModuleLinkElement), photoModuleLink);
+        Approvals.verifyAll("",
+                new Link[]{
+                        new Link(page.readingModuleLinkElement),
+                        new Link(page.travelModuleLinkElement),
+                        new Link(page.photoModuleLinkElement),
+                }
+        );
     }
 
     @Test
     public void modules() {
-        assertEquals(new Module(page.readingModuleElement), readingModule);
-        assertEquals(new Module(page.travelModuleElement), travelModule);
-        assertEquals(new Module(page.photoModuleElement), photoModule);
+        Approvals.verifyAll("",
+                new Module[]{
+                        new Module(page.readingModuleElement),
+                        new Module(page.travelModuleElement),
+                        new Module(page.photoModuleElement),
+                }
+        );
     }
 }
