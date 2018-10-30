@@ -1,0 +1,3 @@
+[0] = Image{src='https://c1.staticflickr.com/8/7494/27510788280_a9f43c3845_s.jpg', width='125', height='125'}
+[1] = Image{src='https://farm2.staticflickr.com/1642/25881055090_e29679a37d_q.jpg', width='125', height='125'}
+[2] = Image{src='https://farm1.staticflickr.com/612/32840145345_4bdf828d8f_q.jpg', width='125', height='125'}
