@@ -11,28 +11,7 @@ import pageobjects.stpcon17.ModulesPage;
 
 import java.io.File;
 
-import static org.testng.Assert.assertEquals;
-
 public class ModulesTest {
-
-    private final Image readingModuleImage = new Image("https://c1.staticflickr.com/8/7494/27510788280_a9f43c3845_s" +
-            ".jpg", "125", "125");
-    private final Image travelModuleImage = new Image("https://farm2.staticflickr.com/1642/25881055090_e29679a37d_q" +
-            ".jpg", "125", "125");
-    private final Image photoModuleImage = new Image("https://farm1.staticflickr.com/612/32840145345_4bdf828d8f_q" +
-            ".jpg", "125", "125");
-
-    private final Link readingModuleLink = new Link("http://iamalittletester.wordpress.com/", "Read about testing",
-            "_blank");
-    private final Link travelModuleLink = new Link("http://travelwithcori.wordpress.com/", "Read a travel blog",
-            "_blank");
-    private final Link photoModuleLink = new Link("https://www.flickr.com/photos/capreoara", "Look at photos",
-            "_blank");
-
-    private final Module readingModule = new Module(readingModuleImage, "Go ahead. Read something!", readingModuleLink);
-    private final Module travelModule = new Module(travelModuleImage, "Go out, do some sightseeing!", travelModuleLink);
-    private final Module photoModule = new Module(photoModuleImage, "Chill. Look at some photos!", photoModuleLink);
-
     //webDriver instance
     private WebDriver webDriver;
     //class used for initializing browser
