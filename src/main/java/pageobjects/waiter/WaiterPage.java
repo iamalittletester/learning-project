@@ -24,5 +24,6 @@ public class WaiterPage {
     @FindBy(how = CSS, using = ".addedItem") public WebElement addedElement;
 
     //checkbox element
-    @FindBy(how = CSS, using = "") public WebElement checkBoxElement;
+    @FindBy(how = CSS, using = "#theCheckbox") public WebElement checkBoxElement;
+    @FindBy(how = CSS, using = "#theText") public WebElement textElement;
 }
