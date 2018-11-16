@@ -1,0 +1,3 @@
+[0] = Link{href='http://iamalittletester.wordpress.com/', label='Read about testing', target='_blank'}
+[1] = Link{href='http://travelwithcori.wordpress.com/', label='Read a travel blog', target='_blank'}
+[2] = Link{href='https://www.flickr.com/photos/capreoara', label='Look at photos', target='_blank'}
